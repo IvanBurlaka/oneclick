@@ -19,6 +19,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
     <!--[if lt IE 9]>
         <script src="js/html5.js"></script>
         <script src="js/respond.js"></script>
@@ -28,17 +30,26 @@
     <div class="main">
         <header>
             <div class="wrap">
-                <img src="upload/iphone.png" height="532" width="252" alt="" class="header-img">
+                <img src="upload/iphone.png" height="532"  data-wow-delay="0.5s" width="252" alt="" class="header-img wow fadeInRightBig">
                 <div class="header-wrapper">
                     <div class="header-bcg">
                     <h1 class="title">One Click <span>App</span></h1>
-                    <p>With a smartphone and the right app, you can bla-bla-bka Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error impedit quod deleniti corporis accusantium, rerum qui ad repudiandae nobis. Voluptatibus!</p>
-                    <p class="autor"><a href="#">Ivan Burlaka</a></p>
-                    <div class="buttons-wrapper">
-                        <a href="#" class="button">Download App</a>
-                        <a href="#" class="button button-stripe">Learn more</a>
+                    <p>Shop with one click using our awesome iphone app.</p>
+                    <p>Sign up now & prepare to enjoy our service:</p>
+                    <form action="#">
+                        <input type="text" id="mail" placeholder="example@gmail.com">
+                         <button class="submit">Send</button>
+                    </form>
                     </div>
-                    </div>
+                    <ul id="example">
+                      <li><span class="days">00</span><p class="days_text">Days</p></li>
+                      <li class="seperator">:</li>
+                      <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+                      <li class="seperator">:</li>
+                      <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+                      <li class="seperator">:</li>
+                      <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+                    </ul>
                 </div>
                 <!-- /.header-wrapper -->
             </div>
@@ -145,5 +156,16 @@
     <script src="js/library.js"></script>
     <script src="js/script.js"></script>
     <script src="js/retina.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        $('#example').countdown({
+        date: '12/24/2014 23:59:59'
+        }, function () {
+          alert('Merry Christmas!');
+        });
+    </script>
 </body>
 </html>
