@@ -242,7 +242,7 @@ html {
 body {
     height: 100%;
     font: 16px/28px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #222222;
+    color: #8a8a8a;
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
     -ms-text-size-adjust: 100%;
@@ -563,11 +563,12 @@ footer {
     margin-bottom: 30px;
 }
 
-.promo-column h5 {
+.promo-column h5, #text h5 {
     font: bold 18px/24px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    margin-bottom: 12px;
-    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 28px;
+    color: #656565;
 }
 
 
@@ -1093,6 +1094,65 @@ ul#example li p {
   color: #a7abb1;
   font-size: 25px;
 }
+.text {
+    width: 50%;
+    float: left;
+}
+.screenshot {
+    float: left;
+    border: 5px solid #e3e3e3;  
+    border-radius: 50%;
+    margin-left: 16%;
+    height:300px;
+}
+.screenshot-image {
+    border-radius: 50%;
+
+}
+.step-one {
+    width:100%;
+    background: #fafafa;
+}
+.step-two {
+    width: 100%;
+    background: #fff;
+}
+#par {
+    padding: 30px;
+   color:#8a8a8a;
+}
+
+.text-wrap {
+    padding-top: 50px;
+}
+.cool-wrap {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 87px 0;
+}
+.screenshot-2 {
+    float: left;
+    margin-left: 0px;
+}
+.text-2 {
+    float: left;
+    margin-left: 16%;
+}
+.step h5 {
+    font: 28px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #8a8a8a;
+}
+.step {
+    border-top: 1px solid rgba(245, 245, 245, 1);
+}
+.img-1 {
+    height:64px;
+    width:64px;
+    width:100%;
+    overflow: hidden;
+}
 /*COUNTDOWN*/
 
 /* ===[ Responsive just mobile portrait ]=== */
@@ -1108,7 +1168,23 @@ ul#example li p {
       line-height: 46px;
   }
 }
-
+.icon {
+    height: 64px;
+    width: 64px;
+    background: transparent url(../images/icons.png);
+}
+.first {
+    background-position: 2px 0px;
+}
+.second {
+    background-position: -63px 0px;
+}
+.third {
+    background-position: -130px 0px;
+}
+.fourth {
+    background-position: -193px 0px;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { 
   .comments .tab-prev,
   .comments .tab-next,
