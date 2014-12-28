@@ -1072,6 +1072,7 @@ ul#example {
   padding: 0;
   display: block;
   text-align: center;
+
 }
  
 ul#example li { display: inline-block; }
@@ -1080,6 +1081,8 @@ ul#example li span {
   font-size: 67px;
   font-weight: 300;
   line-height: 80px;
+    font-family: 'Roboto', sans-serif;
+  font-weight: 100
 }
  
 ul#example li.seperator {
@@ -1089,7 +1092,7 @@ ul#example li.seperator {
 }
  
 ul#example li p {
-  color: #a7abb1;
+  color: #E9E9E9;
   font-size: 25px;
 }
 .text {
@@ -1101,21 +1104,27 @@ ul#example li p {
     border: 5px solid #e3e3e3;  
     border-radius: 50%;
     margin-left: 16%;
-    height:300px;
+    height:269px;
 }
 .screenshot-image {
     border-radius: 50%;
-
+    width:270px;
+    height:270px;
 }
+
 .step-one {
     width:100%;
     background: #fafafa;
 }
+
 .step-two {
     width: 100%;
     background: #fff;
 }
+
 #par {
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
     padding: 30px 0 20px 0;
    color:#8a8a8a;
    text-align: center;
@@ -1139,20 +1148,24 @@ ul#example li p {
     float: left;
     margin-left: 16%;
 }
+
 .step h5 {
     font: 28px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     color: #8a8a8a;
 }
+
 .step {
     border-top: 1px solid rgba(245, 245, 245, 1);
 }
+
 .img-1 {
     height:64px;
     width:64px;
     width:100%;
     overflow: hidden;
 }
+
 .app {
     margin-bottom: 20px;
     display: block;
