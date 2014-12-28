@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,200,500,700);
-
 /* reset --------------------------  */
 
 html,
@@ -325,7 +324,7 @@ a:active {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-.button {
+/*.button {
     color: white;
     background: #10bbf1;
     height: 58px;
@@ -344,7 +343,7 @@ a:active {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+*/
 .button:hover {
     background: #40c9f4;
     border-color: #40c9f4;
@@ -411,18 +410,9 @@ input:focus::-webkit-input-placeholder {
 
 header {
     padding: 104px 0;
-    background: url(../images/header.jpg) no-repeat 50% 50%;
     font: 24px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
-
 header h1 {
     font-size: 60px;
     line-height: 60px;
@@ -541,8 +531,10 @@ footer {
 }
 
 .promo {
-    padding: 114px 0 54px
+    padding: 90px 0 10px;
+    background: #fff;
 }
+
 
 .promo-wrapper {
     margin: 0 -15px
@@ -931,6 +923,7 @@ footer {
       line-height: 52px;
   }
 
+
   header .buttons-wrapper .button {
       margin-bottom: 20px
   }
@@ -1043,6 +1036,9 @@ footer {
 }
 .title {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: -150px;
+    left:50%;
 }
 
 #mail {
@@ -1057,7 +1053,6 @@ footer {
 }
 .submit {
     line-height: 40px;
-    border: 3px solid rgba(255,255,255,0.9);
     border-left: none;
     display: inline-block;
     background-color: #39d1b4;
@@ -1065,12 +1060,15 @@ footer {
     margin-left: -6px;
     color: #fff;
     font-size: 16px;
+    float: left;
+    border:none; 
+    outline: none;
 }
 /*COUNTDOWN*/
 ul#example {
-    width: 76%;
+    width: 67%;
   list-style: none;
-  margin: 20px 0;
+  margin: 30px 0;
   padding: 0;
   display: block;
   text-align: center;
@@ -1079,13 +1077,13 @@ ul#example {
 ul#example li { display: inline-block; }
  
 ul#example li span {
-  font-size: 80px;
+  font-size: 67px;
   font-weight: 300;
   line-height: 80px;
 }
  
 ul#example li.seperator {
-  font-size: 80px;
+  font-size: 65px;
   line-height: 70px;
   vertical-align: top;
 }
@@ -1118,8 +1116,10 @@ ul#example li p {
     background: #fff;
 }
 #par {
-    padding: 30px;
+    padding: 30px 0 20px 0;
    color:#8a8a8a;
+   text-align: center;
+   border-bottom: 1px solid #EBEBEB;
 }
 
 .text-wrap {
@@ -1152,6 +1152,13 @@ ul#example li p {
     width:64px;
     width:100%;
     overflow: hidden;
+}
+.app {
+    margin-bottom: 20px;
+    display: block;
+}
+.crazy {
+    float: left;
 }
 /*COUNTDOWN*/
 
@@ -1198,4 +1205,254 @@ ul#example li p {
       -o-background-size: 200px 50px;
       background-size: 200px 50px;
   }
+}
+
+/*FORM*/
+.group            { 
+  position:relative; 
+  margin-top: 40px; 
+}
+input               {
+  font-size:18px;
+  line-height: 47px;
+  display:block;
+  width:320px;
+  border:none;
+  border-bottom: 0px solid #fff;
+  box-shadow: 1px 1px 0 0 rgba(0,0,0,0.1);
+  background:rgba(255,255,255,0.2);
+  color:white;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;;
+}
+
+input:focus        
+ { outline:none;
+    background: transparent;
+    border-bottom: none;
+    box-shadow: none;
+     }
+
+/* LABEL ======================================= */
+label                {
+  font:"Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#fff; 
+  font-size:19px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:20px;
+  top:4px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label        {
+  top:-20px;
+  font-size:14px;
+  color:#f65a5b;
+}
+
+/* BOTTOM BARS ================================= */
+.bar    { position:relative; display:block; width:300px; }
+.bar:before, .bar:after     {
+  content:'';
+  height:3px; 
+  width:0;
+  bottom:0px; 
+  position:absolute;
+  background:#f65a5b; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+  to    { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+  to    { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+  to    { width:0; background:transparent; }
+}
+
+/*Material Button Mathatfaka*/
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 14px 24px;
+  margin: 0;
+  vertical-align: middle;
+  color: #fff;
+  font: 19px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 19px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+  background: transparent;
+  border: 0;
+  box-shadow: 1px 1px 0 0 #383e46;
+  -webkit-transition: all 0.15s ease;
+          transition: all 0.15s ease;
+}
+.button:focus {
+  outline: 0;
+}
+.button:active {
+  box-shadow: none;
+}
+
+/* Button modifier mixin */
+/* Button modifiers */
+
+
+
+.button-green {
+  background: #f65a5b;
+
+}
+.button-green:hover {
+  background: #f65a5b;
+}
+
+.button-red {
+  background: #E9573F;
+  text-shadow: 2px 2px 0 #dc3519;
+}
+.button-red:hover {
+  background: #e64328;
+}
+
+/* Ripples container */
+.ripples {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* Ripples circle */
+.ripples__circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+.ripples.is-active .ripples__circle {
+  -webkit-animation: ripples .4s ease-in;
+          animation: ripples .4s ease-in;
+}
+
+/* Ripples animation */
+@-webkit-keyframes ripples {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    padding-bottom: 200%;
+    opacity: 0;
+  }
+}
+@keyframes ripples {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    padding-bottom: 200%;
+    opacity: 0;
+  }
+}
+
+.shadow {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+.apps {
+    margin-bottom: 23px;
+    display:inline-block;
+    margin-right: 10px;
+}
+.header-wrapper form  {
+    height: 43px;
+}
+.spanning {
+    position: relative;
+}
+.header-wrap {
+    width:100%;
+}
+.finish h2{
+    padding: 135px 0 110px 0;
+    text-align: center;
+    width:80%;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+
+}
+.press {
+    display:block;
+    margin: 0 auto;
+    margin-bottom: 95px;
+    box-shadow: none;
+    background-color: #40c9f4;
+}
+.press:hover {
+    background-color: #75DDFE;
+}
+.press:active {
+    background-color: #3BA1C1;
 }

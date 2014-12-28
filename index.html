@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
 
+
     <!--[if lt IE 9]>
         <script src="js/html5.js"></script>
         <script src="js/respond.js"></script>
@@ -28,17 +29,33 @@
 </head>
 <body class="no-js">
     <div class="main">
+        <div class="header-wrap" data-parallax="scroll" data-image-src="images/pic1.jpg" data-speed="0.6">
         <header>
             <div class="wrap">
                 <img src="upload/iphone.png" height="532" width="252" alt="" class="header-img wow fadeInRightBig">
                 <div class="header-wrapper">
                     <div class="header-bcg wow fadeInDown">
-                    <h1 class="title">One Click <span>App</span></h1>
-                    <p>Shop with one click using our awesome iphone app.</p>
-                    <p>Sign up now & prepare to enjoy our service:</p>
-                    <form action="#">
-                        <input type="text" id="mail" placeholder="example@gmail.com">
-                         <button class="submit">Send</button>
+                    <!-- <h1 class="title">One Click <span>App</span></h1> -->
+                    <a href="#" class="apps"><img src="images/app.png" alt=""></a>
+                    <a href="#" class="apps app2"><img src="images/app2.png" alt=""></a>
+
+                    <p class="shadow">Shop with one click using our awesome iphone app.</p>
+                    <p class="shadow">Sign up now & prepare to enjoy our service:</p>
+                    <form action="#" class="clearfix">
+                            <div class="group" class="clearfix">
+                                <div class="crazy">    
+                                      <input type="text" required>
+                                      <span class="highlight"></span>
+                                      <span class="bar"></span>
+                                      <label>Your e-mail address</label>
+                                </div>    
+                                <button class="button button-green" type="submit">
+                                  <div class="ripples button__ripples">
+                                    <span class="ripples__circle"></span>
+                                  </div>
+                                  Sumbit
+                                </button>
+                            </div>
                     </form>
                     </div>
                     <div class="wow fadeInUp" data-wow-delay="1.5s">
@@ -57,9 +74,11 @@
             </div>
             <!-- /.wrap -->
         </header>
+    </div>
+
         <div class="spanning">
             <div class="promo clearfix">
-                <div class="wrap">
+                <div class="wrap wow fadeIn">
                     <div class="promo-wrapper clearfix">
                         <div class="promo-column" >
                             <div class="icon first"></div>
@@ -84,6 +103,7 @@
                 </div>
                 <!-- /.wrap -->
             </div>
+        </div>
 <!--             <div class="comments clearfix">
                 <div class="wrap">
                     <div class="tab">
@@ -115,7 +135,7 @@
                     <div class="text wow fadeInLeft">
                         <div class="text-wrap">
                          <h5>Step 1</h5>   
-                        <p id ="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptatem laboriosam cum modi vero, ipsam adipisci architecto est? Nulla totam, maiores laudantium quas natus illo animi facere libero at iusto.</p>
+                        <p id ="par">Select and confirm the purchase of goods.</p>
                         </div>
                     </div>
                     <div class="screenshot wow fadeInRightBig">
@@ -132,7 +152,7 @@
                     <div class="text-2 text wow fadeInRight">
                         <div class="text-wrap">
                          <h5>Step 2</h5>   
-                        <p id ="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptatem laboriosam cum modi vero, ipsam adipisci architecto est? Nulla totam, maiores laudantium quas natus illo animi facere libero at iusto.</p>
+                        <p id ="par">Confirm your data in OneClick application.</p>
                         </div>
                     </div>
                 </div>
@@ -143,13 +163,25 @@
                     <div class="text wow fadeInLeft">
                         <div class="text-wrap">
                          <h5>Step 3</h5>   
-                        <p id ="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptatem laboriosam cum modi vero, ipsam adipisci architecto est? Nulla totam, maiores laudantium quas natus illo animi facere libero at iusto.</p>
+                        <p id ="par">Make a payment and get the details of the order to your email.</p>
                         </div>
                     </div>
                     <div class="screenshot wow fadeInRightBig">
                             <img src="images/screen1.png" class = "screenshot-image" alt="">
                     </div>
                 </div>
+            </div>    
+            <section class="finish" data-parallax="scroll" data-image-src="images/mounts.jpg" data-speed="0.4">
+                <h2>That's all! You do not need to spend a lot of time registering and making purchases at various online stores. Now it takes less than 30 seconds!</h2>
+                <button class = "press button"><span>Download press-kit</span></button>
+            </section>
+
+                    <footer>
+        <div class="wrap">
+            <p>&copy; 2014 <strong>One Click</strong>, All Rights Reserved</p>
+        </div>
+        <!-- /.wrap -->
+    </footer>
             </div>
             <!-- /.simple clearfix -->
             <!-- /.newsletter clearfix -->
@@ -157,26 +189,24 @@
         <!-- /.spanning-columns -->
     </div>
     <!-- /.main -->
-    <footer>
-        <div class="wrap">
-            <p>&copy; 2014 <strong>One Click</strong>, All Rights Reserved</p>
-        </div>
-        <!-- /.wrap -->
-    </footer>
     <script src="js/jquery.js"></script>
     <script src="js/library.js"></script>
     <script src="js/script.js"></script>
     <script src="js/retina.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script>
         new WOW().init();
 
         $('#example').countdown({
-        date: '12/24/2014 23:59:59'
+        date: '12/31/2014 23:59:59'
         }, function () {
-          alert('Merry Christmas!');
+          alert('Happy New Year!');
         });
+
+       
     </script>
 </body>
 </html>
