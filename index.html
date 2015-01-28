@@ -32,9 +32,16 @@
 <body class="no-js">
     <div class="main">
         <div class="header-wrap" data-parallax="scroll" data-image-src="images/pic1.jpg" data-speed="0.4">
-        <header>
+        <header> 
+
+<!--             <div class="extra-wrap">
+                <img src="upload/iphone.png" height="532" width="252" alt="" class="header-img wow fadeInRightBig"> -->
             <div class="wrap">
-                <img src="upload/iphone.png" height="532" width="252" alt="" class="header-img wow fadeInRightBig">
+                <div class ="slide-wrap wow fadeInRightBig">
+                    <div class="img-slide">
+                        <img src="images/slide1.jpg" alt="">
+                    </div>
+                </div>
                 <div class="header-wrapper">
                     <div class="header-bcg wow fadeInDown">
                     <!-- <h1 class="title">One Click <span>App</span></h1> -->
@@ -43,10 +50,22 @@
 
                     <p class="shadow">Buy instantly in online stores with our app one click.</p>
                     <p class="shadow">Join us now and be the first to try our service!</p>
-                    <form action="#" class="clearfix">
+
+                    <!-- changing confirmation behavior of google forms-->
+
+                    <script type="text/javascript">var submitted=false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe"
+                    style="display:none;" onload="if(submitted)
+                    {alert('Thank you! Your response has  been recordered.');
+                     clearInput();
+                    }">
+                    </iframe>
+
+
+                    <form action="https://docs.google.com/forms/d/1YC7mycLRGtZFmCSHUYKt4BcOYME2akzY1ZBICB4th4g/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;" class="clearfix ss-question-list">
                             <div class="group" class="clearfix">
                                 <div class="crazy">    
-                                      <input type="text" required>
+                                      <input type="text" name="entry.1544415831" class="ss-q-short required" id="entry_1544415831" dir="auto" aria-label="jdfjdfdf fddfd " aria-required="true" required="" title="">
                                       <span class="highlight"></span>
                                       <span class="bar"></span>
                                       <label>Your e-mail address</label>
@@ -75,6 +94,7 @@
                 <!-- /.header-wrapper -->
             </div>
             <!-- /.wrap -->
+<!--         </div> -->
         </header>
     </div>
 
@@ -202,6 +222,7 @@
     <script src="js/index.js"></script>
     <script src="js/parallax.min.js"></script>
     <script>
+    // contdown
         new WOW().init();
 
         $('#example').countdown({
@@ -209,8 +230,14 @@
         }, function () {
           alert('Happy New Year!');
         });
+        
+        function clearInput(){
+            document.querySelector('.crazy input').value ="";
+        }
 
        
+    // clearing input value
+
     </script>
 </body>
 </html>

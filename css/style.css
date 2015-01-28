@@ -1324,7 +1324,7 @@ input:focus ~ .highlight {
   to    { width:0; background:transparent; }
 }
 
-/*Material Button Mathatfaka*/
+/*Material Button*/
 .button {
   position: relative;
   display: inline-block;
@@ -1462,9 +1462,25 @@ input:focus ~ .highlight {
     box-shadow: none;
     background-color: #FF7373;
 }
+
 .press:hover {
     background-color: #FE9F9F;
 }
+
 .press:active {
     background-color: #DC7777;
+}
+
+.slide-wrap {
+    float: right;
+    background-image: url(../images/iphone.png);
+    height: 532px;
+    width: 252px;
+}
+.img-slide {
+    height: 381px;
+    width: 216px;
+    background: #fff;
+    margin-top: 75px;
+    margin-left: 18px;
 }
