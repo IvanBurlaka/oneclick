@@ -1483,4 +1483,10 @@ input:focus ~ .highlight {
     background: #fff;
     margin-top: 75px;
     margin-left: 18px;
+    position: relative;
+}
+.img-slide img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
