@@ -4,14 +4,11 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="korzina.ico">
     <title>One click</title>
     <meta name="description" content="A free responsive HTML 5 template with a clean style.">
     <meta name="keywords" content="free template, html 5, responsive, clean, scss">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/touch/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/touch/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" href="images/korzina.png">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
     <meta property="og:url" content="">
@@ -247,8 +244,9 @@
   };
 
   $(function() {
-   $('.img-slide').slideShow();
+   $('.img-slide').slideShow(4500);
   });
+
   if (window.matchMedia("(max-width: 564px)").matches) {
     var pic = document.querySelector(".screenshot-2");
     document.querySelector(".step-two .cool-wrap").removeChild(pic);

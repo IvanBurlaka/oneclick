@@ -1640,6 +1640,26 @@ input:focus ~ .highlight {
     }
     .text-wrap {
         padding-top: 0px;
-    }
+    } 
+}
 
+@media screen and (max-width: 442px) {
+    .crazy {
+        width:200px;
+    }
+    .crazy input  {
+        width:200px;
+    }
+    ul#example li span {
+        font-size: 38px;
+    }
+    ul#example li p {
+        font-size: 16px;
+    }
+    ul#example li.seperator {
+        font-size: 36px;
+    }
+    #example {
+        min-width: 340px !important;
+    }
 }
