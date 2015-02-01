@@ -258,7 +258,7 @@ body {
 
 .wrap {
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 35px;
     max-width: 1140px;
 }
 
@@ -1489,4 +1489,157 @@ input:focus ~ .highlight {
     position: absolute;
     top: 0px;
     left: 0px;
+}
+
+/*MEDIA QUERIES*/
+
+
+@media screen and (max-width: 1090px){
+    .header-wrap {
+    background: url(../images/pic1.jpg);
+    background-size: cover;
+    }
+    .finish {
+    background: url(../images/mounts.jpg);
+    background-size: cover;  
+    }
+    .promo {
+        padding-left: 30px;
+    }
+    .step {
+        padding-left: 50px;
+    }
+
+}
+
+@media screen and (max-width: 980px){ 
+    .crazy {
+        float:left;
+    }
+
+    .button-green {
+        float: left;
+    }
+
+    .group {
+        overflow:hidden;
+        margin: 40px auto;
+        width: 56%;
+    }
+
+    #example {
+        margin-top: 60px;
+    }
+
+    .icon {
+        margin: 0px auto;
+    }
+
+    .text-2 {
+        float: left;
+        margin-left: 5%;
+    }
+    .screenshot {
+        margin-left: 9%;
+    }
+    .screenshot-2 {
+        margin-left: 0px;
+    }
+    .crazy {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 788px){
+    ul#example li span {
+        font-size: 50px;
+    }
+    ul#example li p {
+        font-size: 20px;
+    }
+    .shadow  {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 690px) {
+    header {
+        padding: 30px;
+    }
+    .slide-wrap {
+        float: none;
+        margin: 0 auto;
+    }
+    .img-slide {
+        background: none;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .slide-wrap img{
+        top: 75px;
+    }
+    .header-wrapper {
+        margin-top: 50px
+    }
+    .shadow {
+        width: 100%;
+    }
+    .group {
+        width: 100%;
+    }
+    .countdown ul {
+        width: 100% !important;
+        padding-top: 45px !important;
+    }
+    .wrap {
+        padding:0;
+    }
+    .crazy label {
+        font-size: 16px;
+    }
+    .crazy input {
+        font-size: 16px;
+    }
+    .crazy {
+        width: 270px;
+    }
+    .group {
+        display: inline-block;
+        width: 400px;
+    }   
+    .step {
+        padding:0px;
+    }
+}
+@media screen and (max-width: 564px) {
+    .text {
+        float: none;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .screenshot {
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .step img {
+        display: block;
+        margin: 0px auto;
+    }
+    #par {
+        border:none;
+        padding-bottom: 30px;
+    }
+    .text-2 {
+        float: none;
+        margin: 0 auto;
+        width: 80%
+    }
+    .screenshot-2 {
+        float:left;
+    }
+    .text-wrap {
+        padding-top: 0px;
+    }
+
 }

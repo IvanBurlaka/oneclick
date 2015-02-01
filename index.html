@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 
 
     <!--[if lt IE 9]>
@@ -32,7 +33,7 @@
 </head>
 <body class="no-js">
     <div class="main">
-        <div class="header-wrap" data-parallax="scroll" data-image-src="images/pic1.jpg" data-speed="0.4">
+        <div class="header-wrap" data-parallax="scroll" data-image-src="images/pic1.jpg" data-speed="0.2" data-naturalWidth="1399" data-naturalHeigh="874">
         <header> 
 
 <!--             <div class="extra-wrap">
@@ -83,7 +84,7 @@
                             </div>
                     </form>
                     </div>
-                    <div class="wow fadeInUp" data-wow-delay="1.5s">
+                    <div class="wow fadeInUp countdown" data-wow-delay="1.5s">
                         <ul id="example">
                           <li><span class="days">00</span><p class="days_text">Days</p></li>
                           <li class="seperator">:</li>
@@ -248,8 +249,13 @@
   $(function() {
    $('.img-slide').slideShow();
   });
+  if (window.matchMedia("(max-width: 564px)").matches) {
+    var pic = document.querySelector(".screenshot-2");
+    document.querySelector(".step-two .cool-wrap").removeChild(pic);
+    document.querySelector(".step-two .cool-wrap").appendChild(pic);
 
-    // clearing input value
+  /* the view port is less, than 400 pixels wide */
+    } 
 
     </script>
 </body>
