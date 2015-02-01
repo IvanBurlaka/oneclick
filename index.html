@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="korzina.ico">
-    <title>One click</title>
+    <title>OneСlick</title>
     <meta name="description" content="A free responsive HTML 5 template with a clean style.">
     <meta name="keywords" content="free template, html 5, responsive, clean, scss">
     <link rel="apple-touch-icon" href="images/korzina.png">
@@ -239,7 +239,7 @@
    var $elem = this;
    this.children(':gt(0)').hide();
    setInterval(function() {
-    $elem.children().eq(0).fadeOut().next().fadeIn().end().appendTo($elem);
+    $elem.children().eq(0).fadeOut("slow").next().fadeIn("slow").end().appendTo($elem);
    }, timeOut || 3000);
   };
 
